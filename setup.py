@@ -10,6 +10,7 @@ setup(
     description='A simple python lambda calculus interpreter. Includes file parsing and REPL.',
     url='https://github.com/NathanCYee/minichurch',
     author='Nathan Yee',
+    license='BSD 3-Clause',
     install_requires=[
         'click',
         'colorama'
