@@ -9,6 +9,7 @@ Executor accepts both the lambda character "λ" and the chevron character "^" fo
 - [Setup and Install](https://github.com/NathanCYee/minichurch#Setup-and-Install)
 - [Usage](https://github.com/NathanCYee/minichurch#Usage)
 - [Technologies](https://github.com/NathanCYee/minichurch#Technologies)
+- [License](https://github.com/NathanCYee/minichurch#License)
 
 ## Features
 
@@ -55,4 +56,5 @@ Project was built with:
     - [cmd](https://docs.python.org/3/library/cmd.html) - built-in repl tool maker
     - [colorama](https://pypi.org/project/colorama/) - text coloring library
 
-
+# License
+BSD 3-Clause
