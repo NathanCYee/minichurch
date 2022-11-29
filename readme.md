@@ -1,7 +1,8 @@
 # minichurch
 
-A simple python lambda calculus interpreter. Includes file parsing and REPL.
-Executor accepts both the lambda character "λ" and the chevron character "^" for function definitions
+A simple python lambda calculus interpreter including file parsing and a REPL shell.
+Executor accepts both the lambda character "λ" and the chevron character "^" for function definitions.
+Made for my CS-152 class.
 
 ## Table of Contents
 
@@ -12,8 +13,10 @@ Executor accepts both the lambda character "λ" and the chevron character "^" fo
 - [License](https://github.com/NathanCYee/minichurch#License)
 
 ## Features
-
-- TBD
+- Full REPL shell w/ command history
+- Evaluation of lambda calculus statements
+- Parsing and evaluation of text files containing lambda calculus
+- No variable renaming
 
 ## Setup and Install
 
@@ -39,7 +42,7 @@ Options:
   --help               Show this message and exit.
 ```
 
-Calling the minichurch command without any arguments will open a repl window.
+Calling the minichurch command without any arguments will open a repl shell.
 ### REPL Commands
 - `exec [statement]` - executes a lambda calculus statement and displays the result (default behavior without any command)
 - `explain [statement]` - executes a lambda calculus statement and displays the result along with every binding step
