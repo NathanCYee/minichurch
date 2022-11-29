@@ -1,7 +1,9 @@
-# minichurch
+# ⛪ minichurch
 
 A simple python lambda calculus interpreter including file parsing and a REPL shell.
+
 Executor accepts both the lambda character "λ" and the chevron character "^" for function definitions.
+
 Made for my CS-152 class.
 
 ## Table of Contents

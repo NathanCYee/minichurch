@@ -7,7 +7,7 @@ tests_require = [
 setup(
     name='minichurch',
     version='0.0.1',
-    description='A simple python lambda calculus interpreter. Includes file parsing and REPL.',
+    description='A simple python lambda calculus interpreter including file parsing and a REPL shell.',
     url='https://github.com/NathanCYee/minichurch',
     author='Nathan Yee',
     license='BSD 3-Clause',
