@@ -246,8 +246,6 @@ def renamer(expression: Expression, cur_names: dict = None, showstep = None):
     if isinstance(expr, Name):
         if expr.symbol in cur_names:
             if expr != cur_names[expr.symbol]:
-                print(expr)
-                print(expr.symbol)
                 try:
                     # get new name
                     new_symbol = get_next_name(cur_names)
@@ -273,7 +271,6 @@ def renamer(expression: Expression, cur_names: dict = None, showstep = None):
         renamer(expr.left.get(), cur_names.copy(), showstep)
         renamer(expr.right.get(), cur_names.copy(), showstep)
     elif isinstance(expr, Function):
-        print(expr.bound)
         # register new name on right or rename it
         renamer(expr.name.get(), cur_names, showstep)
         # use updated dict to update inner
