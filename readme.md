@@ -1,4 +1,4 @@
-# ⛪ minichurch
+# minichurch ⛪
 
 A simple python lambda calculus interpreter including file parsing and a REPL shell.
 
@@ -18,7 +18,7 @@ Made for my CS-152 class.
 - Full REPL shell w/ command history
 - Evaluation of lambda calculus statements
 - Parsing and evaluation of text files containing lambda calculus
-- No variable renaming
+- Alphabetical variable renaming of conflicting variables up to 52 in depth
 
 ## Setup and Install
 
