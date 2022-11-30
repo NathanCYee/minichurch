@@ -158,21 +158,13 @@ class Application(Expression):
                 self.left = self.left.get()  # retrieve result
                 if not bound:  # reduced down to a name
                     return False
-            if showstep is not None:
-                print(
-                    f"\nAssociate {Fore.GREEN+str(self.right)+Fore.RESET} with {Fore.GREEN+str(self.left)+Fore.RESET}")
-            self.left.bind(self.right, showstep)  # bind outer
-            self.left = self.left.get()  # retrieve result
-            self.applied = True
-            if showstep is not None:
-                showstep()
-            return True
+            
         if isinstance(self.left, Function):  # only bind functions
             if showstep is not None:
                 print(
                     f"\nAssociate {Fore.GREEN+str(self.right)+Fore.RESET} with {Fore.GREEN+str(self.left)+Fore.RESET}")
-            self.left.bind(self.right, showstep)
-            self.left = self.left.get()
+            self.left.bind(self.right, showstep) # bind outer
+            self.left = self.left.get()# retrieve result
             self.applied = True
             if showstep is not None:
                 showstep()
