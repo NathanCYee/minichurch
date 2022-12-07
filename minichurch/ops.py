@@ -25,11 +25,11 @@ def run(file, explain, parsetree):
     """Simple lambda calculus executor, opens a repl shell if a file is not specified"""
     if file is not None:
         inputs = streamfile(file) # create a file stream for the lexer
-        lexstream = lexer.lex(inputs) # 
-        built_tree = parser.parse(lexstream)
+        lexstream = lexer.lex(inputs) # create a token stream from the lexer
+        built_tree = parser.parse(lexstream) # parse and build a tree
         if parsetree:
             print(built_tree)
-        output_val = parser.build(built_tree)
+        output_val = parser.build(built_tree) # build an evaluatable expression
         showstep =  None
         if explain:
             showstep = syntax.create_showstep(output_val)

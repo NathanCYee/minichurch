@@ -31,12 +31,12 @@ def lex(inputstream: typing.Generator[str, None, None])-> typing.Generator[Token
                     '(': add_block, ')': remove_block}
 
     for char in inputstream:
-        if char == ' ' or char == '\n' or char =='\t':
+        if char.isspace():
             # advance past whitespace
             continue
         # known symbol separator, return its object
         if char in lookup_table:
             yield lookup_table[char]()
         # yield a name because the character is not known
-        elif char != '\n':
+        else:
             yield Name(char)
