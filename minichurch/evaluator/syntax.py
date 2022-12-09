@@ -169,6 +169,9 @@ class Application(Expression):
             if showstep is not None:
                 showstep()
             return True
+        elif isinstance(self.right, Expression):
+            self.right.bind(None, showstep) # bind right outermost
+            self.right = self.right.get()
         return False
 
     def get(self):
